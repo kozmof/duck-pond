@@ -4,6 +4,7 @@ Duck Pond = DuckDB + FastAPI Container
 ## Quick Start
 ### Dev Container
 ```sh
+uv sync
 source .venv/bin/activate
 fastapi dev src/main.py --port 80
 ```

@@ -8,3 +8,6 @@ ENV UV_PYTHON_INSTALL_DIR=/python
 ENV UV_PYTHON_PREFERENCE=only-managed
 
 RUN uv python install ${PYTHON_VERSION}
+
+COPY uv.lock pyproject.toml ./
+COPY ./src/ ./src
