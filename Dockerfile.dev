@@ -1,0 +1,10 @@
+ARG PYTHON_VERSION=3.13
+
+FROM ghcr.io/astral-sh/uv:bookworm AS builder
+
+ENV UV_COMPILE_BYTECODE=1 
+ENV UV_LINK_MODE=copy
+ENV UV_PYTHON_INSTALL_DIR=/python
+ENV UV_PYTHON_PREFERENCE=only-managed
+
+RUN uv python install ${PYTHON_VERSION}

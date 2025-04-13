@@ -1,0 +1,10 @@
+[project]
+name = "duck-pond"
+version = "0.1.0"
+description = "DuckDB + FastAPI"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "duckdb>=1.2.2",
+    "fastapi[standard]>=0.115.12",
+]

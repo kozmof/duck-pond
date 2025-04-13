@@ -1,0 +1,11 @@
+{
+    "name": "Duck Pond",    
+    "dockerFile": "../Dockerfile.dev",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "ms-python.python"
+        ]
+      }
+    }
+}
